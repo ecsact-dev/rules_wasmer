@@ -1,0 +1,30 @@
+load("@rules_cc//cc:defs.bzl", "cc_import", "cc_library")
+
+cc_import(
+    name = "wasmer-static-lib",
+    static_library = "lib/wasmer.lib",
+)
+
+cc_library(
+    name = "wasmer-static",
+    visibility = ["//visibility:public"],
+    includes = ["include"],
+    defines = ["WASM_API_EXTERN="],
+    linkopts = [
+        "-DEFAULTLIB:ws2_32",
+        "-DEFAULTLIB:Advapi32",
+        "-DEFAULTLIB:Userenv",
+        "-DEFAULTLIB:Bcrypt",
+        "-DEFAULTLIB:ntdll",
+        "-DEFAULTLIB:Shell32",
+        "-DEFAULTLIB:Ole32",
+    ],
+    hdrs = glob(["include/**/*.h", "include/**/*.hh"]),
+    deps = [":wasmer-static-lib"],
+)
+
+alias(
+    name = "wasmer",
+    visibility = ["//visibility:public"],
+    actual = ":wasmer-static",
+)

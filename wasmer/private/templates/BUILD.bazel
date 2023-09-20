@@ -1,0 +1,4 @@
+exports_files([
+    "wasmer.windows.BUILD.bazel",
+    "wasmer.unix.BUILD.bazel",
+])
