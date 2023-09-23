@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.1 - 2023-09-23
+#### Bug Fixes
+- incorrect target for unix - (56b5b4b) - Ezekiel Warren
+
+- - -
+
 ## 0.1.0 - 2023-09-20
 #### Miscellaneous Chores
 - add release related files - (b25459b) - Ezekiel Warren
