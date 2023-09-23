@@ -1,7 +1,7 @@
 load("@rules_cc//cc:defs.bzl", "cc_import", "cc_library")
 
 cc_import(
-    name = "wasmer-static",
+    name = "wasmer-static-lib",
     static_library = "lib/libwasmer.a",
 )
 
