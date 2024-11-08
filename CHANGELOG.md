@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.2 - 2024-11-08
+#### Bug Fixes
+- add missing libraries for windows - (f176dd7) - Ezekiel Warren
+#### Miscellaneous Chores
+- ignore bazel lock files - (0c6de64) - Ezekiel Warren
+
+- - -
+
 ## 0.1.1 - 2023-09-23
 #### Bug Fixes
 - incorrect target for unix - (56b5b4b) - Ezekiel Warren
