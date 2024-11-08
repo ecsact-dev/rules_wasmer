@@ -18,6 +18,8 @@ cc_library(
         "-DEFAULTLIB:ntdll",
         "-DEFAULTLIB:Shell32",
         "-DEFAULTLIB:Ole32",
+        "-DEFAULTLIB:OleAut32",
+        "-DEFAULTLIB:RuntimeObject",
     ],
     hdrs = glob(["include/**/*.h", "include/**/*.hh"]),
     deps = [":wasmer-static-lib"],
